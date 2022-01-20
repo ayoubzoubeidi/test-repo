@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      routes:
+        - id: ministere-interieur
+          uri: lb://ministere-interieur
+          predicates:
+            - Path=/api/v1/persons/**
+        - id: ministere-finances
+          uri: lb://ministere-finances
+          predicates:
+            - Path=/api/v1/amdendes/**
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG

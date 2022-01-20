@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    username: {cipher}6e4ec6de828d7634904fa48dc3fb2a0708d95cb061fefe3b215aa58613f11fd0
+    password: {cipher}065e8a6f89c0d138d9d28d815d36d3524e63cd1c0d7535d8d42094386f13a8ae
+    url: jdbc:mysql://127.0.0.1:3306/interieur?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 20
+      idle-timeout: 30000
+      max-lifetime: 2000000
+      connection-timeout: 30000
+  jpa:
+    database: mysql
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+
+  artemis:
+    user: {cipher}789263967e42a5887e4f49333403c644205ff29531e665b1698b4d52631bb546
+    password: {cipher}e953b7c67fea3d4217b219826d20a3f7cdb89d3d2f2b06ee75e2e4ad989d595e
+logging:
+  level:
+    sql: debug

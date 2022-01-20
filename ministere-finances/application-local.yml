@@ -1,0 +1,11 @@
+spring:
+  data:
+    mongodb:
+      database: ministere-finances
+      uri: {cipher}5cec72816f724325d6a4d07ae4894d1d11e802cf92a7b03bd9460825f7ecedd75c99a09b2e613682e80e5e166be007d2574134f4d077421d8b52a2be8b250d927ad0434ee810fb36fb7af7e6a6d22767b53bfb1f71b6fe587f706b844d4ae48423b697bb120b543467ce8c8eaa62d8b5f1635775c29f171ceeb048dfa5f12b44
+  artemis:
+    user: {cipher}789263967e42a5887e4f49333403c644205ff29531e665b1698b4d52631bb546
+    password: {cipher}e953b7c67fea3d4217b219826d20a3f7cdb89d3d2f2b06ee75e2e4ad989d595e
+logging:
+  level:
+    org.springframework.data.mongodb.core.MongoTemplate: DEBUG
